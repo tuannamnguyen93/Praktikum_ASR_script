@@ -16,3 +16,4 @@ feats = audio.extract_fbank(signal, fbank_mat, sample_rate=sample_rate)
 if mean_norm:
     feats = feats - feats.mean(axis=0, keepdims=True)
 
+print(feats.shape)
